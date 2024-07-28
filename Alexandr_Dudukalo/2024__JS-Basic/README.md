@@ -21,7 +21,7 @@ console.log(price1, price2);
 ```  
  <hr>  
 
-## Objects
+## Objects:
 Version 1
 
 ```js
@@ -45,7 +45,7 @@ let product2 = {
 
 console.table({ product });
 ```
-OUTPUT:
+###### OUTPUT:
 product: { name: "ball", price: 200 }}
 
 
