@@ -34,7 +34,7 @@ console.table({ product });
 ```
 ###### OUTPUT: product: { name: "ball", price: 200 }}
 
-### OR
+#### OR
 Version 2  
 ```js
 let product = {
@@ -45,6 +45,22 @@ let product = {
 console.table({ product });
 ```
 ###### OUTPUT: product: { name: "ball", price: 200 }}
+
+### Objects get value:
+```js
+let product = {};
+
+product.name = "ball";
+product.price = 200;
+
+console.log(product.name);
+console.log(product.price);
+```
+
+###### OUTPUT: 
+ball   
+  
+
 
 
 
