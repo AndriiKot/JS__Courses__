@@ -16,5 +16,5 @@ console.log(price1, price2);
 
  300  
  200   
- <br />  
+ <hr>  
 
