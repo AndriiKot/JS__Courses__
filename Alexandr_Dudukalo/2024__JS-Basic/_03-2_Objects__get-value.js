@@ -1,7 +1,7 @@
-﻿let product = {};
-
-product.name = "ball";
-product.price = 200;
+﻿let product = {
+  name: "ball",
+  price: 200,
+};
 
 console.log(product["name"]);
 console.log(product["price"]);
