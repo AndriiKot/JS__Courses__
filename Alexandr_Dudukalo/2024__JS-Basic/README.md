@@ -145,7 +145,9 @@ product1.price = 300;
 console.log(product1 === product2); // !!!!   true   !!!!
 ```
 <hr>
+
 ## Copy Objects:
+
 ```js
 const product1 = {
   name: "ball",
