@@ -6,7 +6,7 @@
 ## Contents:
 #### [Primitive Types](#primative-types)
 #### [Objects](#Objects)
-#### [Objects get value](#Objects get value)
+#### ['Objects get value'](#'Objects get value')
 
 
 
