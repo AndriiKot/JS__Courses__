@@ -1,11 +1,24 @@
-﻿
-let price1 = 200;
-let price2 = price
+﻿// Objects
+// Version 1
+let product = {};
 
-console.log({ price1, price2 }); // {price1: 200, price2: 200}
+product.name = "ball";
+product.price = 200;
 
-// !! Testing 1 !!
+console.table({ product });
+//  product: { name: "ball", price: 200 }}
 
-price1 = 300
 
-console.log({ price1, price2 }); // {price1: 300, price2: 200}
+// OR
+
+// Version 2
+let product2 = {
+    name: "ball",
+    price: 200
+};
+
+console.table({ product });
+//  product: { name: "ball", price: 200 }}
+
+
+

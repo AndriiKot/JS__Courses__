@@ -6,15 +6,49 @@
 
 ## Primitive Types:  
 
+```js
 let price1 = 200;  
 let price2 = price  
-
+```
 ### !!! WARNING !!!  
 
+```js
 price1 = 300  
 console.log(price1, price2);  
 
  300  
- 200   
+ 200 
+```  
  <hr>  
+
+## Objects
+Version 1
+
+```js
+let product = {};  
+
+product.name = "ball";  
+product.price = 200;  
+
+console.table({ product });  
+```
+OUTPUT:
+ product: { name: "ball", price: 200 }}  
+
+### OR
+Version 2  
+```js
+let product2 = {
+    name: "ball",
+    price: 200
+};
+
+console.table({ product });
+```
+OUTPUT:
+product: { name: "ball", price: 200 }}
+
+
+
+
 
