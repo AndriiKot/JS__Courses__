@@ -4,17 +4,17 @@
 #### [Полный Курс JavaScript для новичков. Урок 1: Ссылочные типы данных](https://www.youtube.com/watch?v=ap3mLiPF2PE)
 
 
-## Primitive Types:
+## Primitive Types:  
 
-let price1 = 200;
-let price2 = price
+let price1 = 200;  
+let price2 = price  
 
-!!! WARNING !!!
+!!! WARNING !!!  
 
-price1 = 300
-console.log(price1, price2);
+price1 = 300  
+console.log(price1, price2);  
 
- 300
- 200 
- <br>
+ 300  
+ 200   
+ <br>  1
 
