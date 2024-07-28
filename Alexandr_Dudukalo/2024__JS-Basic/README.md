@@ -37,7 +37,7 @@ console.table({ product });
 ### OR
 Version 2  
 ```js
-let product2 = {
+let product = {
     name: "ball",
     price: 200
 };
