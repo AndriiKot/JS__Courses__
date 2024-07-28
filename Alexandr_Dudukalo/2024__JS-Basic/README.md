@@ -45,8 +45,8 @@ let product2 = {
 
 console.table({ product });
 ```
-###### OUTPUT:
-product: { name: "ball", price: 200 }}
+###### OUTPUT: product: { name: "ball", price: 200 }}
+
 
 
 
