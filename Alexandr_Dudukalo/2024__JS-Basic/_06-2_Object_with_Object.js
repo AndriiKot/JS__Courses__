@@ -1,5 +1,4 @@
-﻿// Object with Object
-const size = {
+﻿const size = {
   width: 200,
   height: 300,
   length: 400,
@@ -8,7 +7,7 @@ const size = {
 const product = {
   name: "ball",
   price: 200,
-  size: size,
+  size,
 };
 
 console.dir(product);

@@ -1,14 +1,12 @@
 ﻿// Object with Object
-const size = {
-  width: 200,
-  height: 300,
-  length: 400,
-};
-
 const product = {
   name: "ball",
   price: 200,
-  size: size,
+  size: {
+    width: 200,
+    height: 300,
+    length: 400,
+  },
 };
 
 console.dir(product);
