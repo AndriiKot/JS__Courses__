@@ -4,8 +4,8 @@
 
 #### [Полный Курс JavaScript для новичков. Урок 1: Ссылочные типы данных](https://www.youtube.com/watch?v=ap3mLiPF2PE)
 ## Contents:
-### ![Primitive Types](#primative-types)
-### ![Objects](#objects)
+### [Primitive Types](#primative-types)
+### [Objects](#objects)
 
 
 ## Primitive Types: {#primative-types}
