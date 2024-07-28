@@ -9,7 +9,7 @@ console.log(price1 === price2); // !!!!  false   !!!!
 
 
 //Compare Objects:
-// !!! WARNING !!!
+// !!! WARNING !!!$
 let product1 = {
   name: "ball",
   price: 200,

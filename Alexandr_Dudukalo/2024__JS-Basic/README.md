@@ -110,6 +110,7 @@ console.log(product[price]);
 
 ball  
 200
+<hr>
 
 ## Compare Primitive Types:
 
@@ -143,3 +144,19 @@ product1.price = 300;
 
 console.log(product1 === product2); // !!!!   true   !!!!
 ```
+<hr>
+## Copy Objects:
+```js
+const product1 = {
+  name: "ball",
+  price: 200,
+};
+
+const product2 = {
+  name: product1.name,
+  price: product1.price,
+};
+
+console.log(product1 === product2); //  !!!  false   !!!
+```
+
