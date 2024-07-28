@@ -5,7 +5,7 @@
 
 ## Contents:
 #### [Primitive Types](#primative-types)
-#### [Objects](#objects)
+#### [Objects](#Objects)
 
 
 ## Primitive Types: {#primative-types}
