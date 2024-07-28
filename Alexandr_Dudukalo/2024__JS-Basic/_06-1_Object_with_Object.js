@@ -1,13 +1,24 @@
-﻿// Copy Objects
+﻿const size = {
+  width: 200,
+  height: 300,
+  length: 400,
+};
+
 const product1 = {
   name: "ball",
   price: 200,
+  size,
 };
+
+// or
 
 const product2 = {
-  name: product1.name,
-  price: product1.price,
+  name: "ball",
+  price: 200,
+  size: size,
 };
 
-console.log(product1 === product2); //  !!!  false   !!!
-
+console.dir(product1);
+console.dir(product2);
+// product1: { name: "ball", price: 200, size: { width: 200, height: 300, length: 400 } }
+// product2: { name: "ball", price: 200, size: { width: 200, height: 300, length: 400 } }
