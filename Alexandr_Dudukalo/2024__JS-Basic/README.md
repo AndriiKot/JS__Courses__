@@ -27,7 +27,7 @@ console.log(price1, price2);
 
  <hr>
 
-## Objects: (#objects)
+## Objects
 
 Version 1
 
