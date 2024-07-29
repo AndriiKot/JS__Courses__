@@ -255,6 +255,7 @@ const product3 = {
 ```
 
 <hr>
+
 ## Objects with Function:
 
 ```js
@@ -373,4 +374,35 @@ for (let item of menu) {
 console.log(menu);
 // [ 'Menu', 'Home', 'About', 'Contact' ]
 // !!! WARNING !!!
+```
+
+## DOM Objects and Arrays:
+
+```js
+const btn = document.createElement("button");
+btn.textContent = "Button 1";
+document.body.append(btn);
+
+console.log(btn); // <button>Button 1</button>
+```
+
+```js
+const btn = document.createElement("button");
+btn.textContent = "Button 1";
+document.body.append(btn);
+
+// !!! WARNING !!!
+console.log(btn); // <button>Button 2</button>
+btn.textContent = "Button 2";
+// !!! WARNING !!!
+```
+
+```js
+const menu = ["Menu", "Home", "About", "Contact"];
+
+for (const item of menu) {
+  const btn = document.createElement("button");
+  btn.textContent = item;
+  document.body.append(btn);
+}
 ```

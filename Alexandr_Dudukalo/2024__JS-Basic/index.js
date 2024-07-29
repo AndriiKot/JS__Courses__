@@ -1,6 +1,7 @@
-﻿const btn = document.createElement("button");
-btn.textContent = "Button 1";
-document.body.append(btn);
+﻿const menu = ["Menu", "Home", "About", "Contact"];
 
-console.log(btn); // <button>Button 1</button>
-
+for (const item of menu) {
+  const btn = document.createElement("button");
+  btn.textContent = item;
+  document.body.append(btn);
+}
