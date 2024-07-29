@@ -388,8 +388,8 @@ document.body.append(btn);
 console.log(btn); // <button>Button 1</button>
 ```
 
-
 #### version 1-2
+
 ### !!! WARNING !!!
 
 ```js
@@ -404,6 +404,7 @@ btn.textContent = "Button 2";
 ```
 
 #### version 2-1
+
 ```js
 const menu = ["Menu", "Home", "About", "Contact"];
 
@@ -415,6 +416,7 @@ for (const item of menu) {
 ```
 
 #### version 2-2
+
 ### !!! WARNING !!!
 
 ```js
@@ -424,9 +426,11 @@ const menu = ["Menu", "Home", "About", "Contact"];
 for (const item of menu) {
   const btn = document.createElement("button");
   btn.textContent = item;
+  console.log(btn); // !!! <button>Menu !!!</button> ... <button>Contact !!!</button> !!!
   document.body.append(btn);
 
   btn.textContent = item + "!!!";
+  console.log(btn); // !!! <button>Menu !!!</button> ... <button>Contact !!!</button> !!!
 }
 // <button>Menu!!!</button>
 // <button>Home!!!</button>
@@ -437,7 +441,11 @@ for (const item of menu) {
 ```
 
 #### version 3-1
+
+##### add className
+
 ## !!! WARNING !!!
+
 ```js
 const menu = ["Menu", "Home", "About", "Contact"];
 
@@ -457,4 +465,28 @@ for (const item of menu) {
   };
 }
 // !!! WARNING !!!
+```
+
+#### version 3-2
+
+##### add className
+
+## !!! WARNING !!!
+
+```js
+const menu = ["Menu", "Home", "About", "Contact"];
+
+let activeBtn;
+
+for (const item of menu) {
+  const btn = document.createElement("button");
+  btn.textContent = item;
+  document.body.append(btn);
+
+  btn.onclick = () => {
+    if (activeBtn) activeBtn.classList.remove("active");
+    btn.classList.add("active");
+    activeBtn = btn;
+  };
+}
 ```

@@ -4,9 +4,11 @@
 for (const item of menu) {
   const btn = document.createElement("button");
   btn.textContent = item;
+  console.log(btn);
   document.body.append(btn);
 
   btn.textContent = item + "!!!";
+  console.log(btn);
 }
 // <button>Menu!!!</button>
 // <button>Home!!!</button>

@@ -1,5 +1,6 @@
 ﻿const menu = ["Menu", "Home", "About", "Contact"];
 
+// !!! WARNING !!!
 let activeBtn;
 
 for (const item of menu) {
@@ -13,3 +14,4 @@ for (const item of menu) {
     activeBtn = btn;
   };
 }
+// !!! WARNING !!!
