@@ -378,6 +378,8 @@ console.log(menu);
 
 ## DOM Objects and Arrays:
 
+#### version 1
+
 ```js
 const btn = document.createElement("button");
 btn.textContent = "Button 1";
@@ -388,6 +390,7 @@ console.log(btn); // <button>Button 1</button>
 
 ### !!! WARNING !!!
 
+#### version 2
 ```js
 const btn = document.createElement("button");
 btn.textContent = "Button 1";
@@ -399,6 +402,7 @@ btn.textContent = "Button 2";
 // !!! WARNING !!!
 ```
 
+#### version 3
 ```js
 const menu = ["Menu", "Home", "About", "Contact"];
 
