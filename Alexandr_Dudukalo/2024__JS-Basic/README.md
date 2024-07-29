@@ -378,7 +378,7 @@ console.log(menu);
 
 ## DOM Objects and Arrays:
 
-#### version 1
+#### version 1-1
 
 ```js
 const btn = document.createElement("button");
@@ -389,7 +389,7 @@ console.log(btn); // <button>Button 1</button>
 ```
 
 
-#### version 2
+#### version 1-2
 ### !!! WARNING !!!
 
 ```js
@@ -403,7 +403,7 @@ btn.textContent = "Button 2";
 // !!! WARNING !!!
 ```
 
-#### version 3
+#### version 2-1
 ```js
 const menu = ["Menu", "Home", "About", "Contact"];
 
@@ -412,4 +412,26 @@ for (const item of menu) {
   btn.textContent = item;
   document.body.append(btn);
 }
+```
+
+#### version 2-2
+### !!! WARNING !!!
+
+```js
+const menu = ["Menu", "Home", "About", "Contact"];
+
+// !!! WARNING !!!
+for (const item of menu) {
+  const btn = document.createElement("button");
+  btn.textContent = item;
+  document.body.append(btn);
+
+  btn.textContent = item + "!!!";
+}
+// <button>Menu!!!</button>
+// <button>Home!!!</button>
+// <button>About!!!</button>
+// <button>Contact!!!</button>
+
+// !!! WARNING !!!
 ```
