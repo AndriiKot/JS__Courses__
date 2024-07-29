@@ -6,6 +6,6 @@ for (const item of menu) {
   document.body.append(btn);
 
   btn.onclick = () => {
-    console.log("TEST");
+    btn.classList.add("active");
   };
 }
