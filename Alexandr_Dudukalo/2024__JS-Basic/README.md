@@ -350,3 +350,27 @@ for (const product of products) {
 // pen 10
 // book 300
 ```
+
+### !!! WARNING !!!
+
+```js
+const menu = ["Menu", "Home", "About", "Contact"];
+
+// !!! WARNING !!!
+console.log(menu);
+// [ 'Menu', 'Home', 'About', 'Contact' ]
+
+for (let item of menu) {
+  item = item + "!!!";
+  console.log(item); //
+}
+
+// Menu!!!
+// Home!!!
+// About!!!
+// Contact!!!
+
+console.log(menu);
+// [ 'Menu', 'Home', 'About', 'Contact' ]
+// !!! WARNING !!!
+```
