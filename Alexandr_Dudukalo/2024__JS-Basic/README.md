@@ -388,9 +388,10 @@ document.body.append(btn);
 console.log(btn); // <button>Button 1</button>
 ```
 
-### !!! WARNING !!!
 
 #### version 2
+### !!! WARNING !!!
+
 ```js
 const btn = document.createElement("button");
 btn.textContent = "Button 1";
