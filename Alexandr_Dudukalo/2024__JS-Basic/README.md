@@ -1,9 +1,10 @@
 ﻿# JavaScript Basic (2024)
 
 #### Source:
+
 ##### [Полный Курс JavaScript для новичков. Урок 1: Ссылочные типы данных](https://www.youtube.com/watch?v=ap3mLiPF2PE)
 
-## Primitive Types: 
+## Primitive Types:
 
 ```js
 let price1 = 200;
@@ -109,6 +110,7 @@ console.log(product[price]);
 
 ball  
 200
+
 <hr>
 
 ## Compare Primitive Types:
@@ -143,6 +145,7 @@ product1.price = 300;
 
 console.log(product1 === product2); // !!!!   true   !!!!
 ```
+
 <hr>
 
 ## Compare Objects properties:
@@ -166,6 +169,7 @@ if (product1.price === product2.price) {
 
 // true
 ```
+
 ```js
 const product1 = {
   name: "ball",
@@ -201,9 +205,10 @@ const product2 = {
 
 console.log(product1 === product2); //  !!!  false   !!!
 ```
+
 <hr>
 
-## Objects with Object: 
+## Objects with Object:
 
 ```js
 const size = {
@@ -218,6 +223,7 @@ const product1 = {
   size,
 };
 ```
+
 #### OR
 
 ```js
@@ -247,6 +253,7 @@ const product3 = {
   },
 };
 ```
+
 <hr>
 ## Objects with Function:
 
@@ -279,9 +286,11 @@ console.log(products);
 // [ { name: "ball", price: 160 }, { name: "pen", price: 10 }, { name: "book", price: 240 } ]
 // !!! WARNING !!!
 ```
+
 <hr>
 
-## Objects and For: 
+## Objects and For:
+
 ```js
 const products = [
   {
@@ -307,11 +316,11 @@ for (let i = 0; i < products.length; i++) {
 // { name: 'book', price: 300 }
 
 for (let i = 0; i < products.length; i++) {
-  console.log(products[i].name, products[i].price);
+  const product = products[i];
+  console.log(`${product.name} ${product.price}`);
 }
 
 // ball 200
 // pen 10
 // book 300
-
 ```
