@@ -325,7 +325,7 @@ for (let i = 0; i < products.length; i++) {
 // book 300
 ```
 
-## Objects and For of:
+## Array and For of:
 
 ```js
 const products = [
@@ -346,7 +346,6 @@ const products = [
 for (const product of products) {
   console.log(product.name, product.price);
 }
-
 // ball 200
 // pen 10
 // book 300
