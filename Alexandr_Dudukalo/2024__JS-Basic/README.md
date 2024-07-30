@@ -276,7 +276,7 @@ const products = [
 
 // !!! WARNING !!!
 function discount(product) {
-  product.price = product.price * 0.8;
+  product.price = product.price * 0.8; // !!! MUTATION !!!
 }
 
 console.log(products);
