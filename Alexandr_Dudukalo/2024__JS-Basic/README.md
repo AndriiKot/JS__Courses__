@@ -515,3 +515,17 @@ for (const item of menu) {
   };
 }
 ```
+
+## Fuctions:
+
+```js
+function hello(name) {
+  console.log(`Hello ${name}!`);
+}
+
+hello("Alexandr"); // Hello Alexandr!
+hello("Andrii");  // Hello Andrii!
+```
+
+## !!! WARNING !!!
+
