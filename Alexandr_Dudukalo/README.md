@@ -27,5 +27,25 @@ price1 = 300;
 console.log(price1 === price2); // !!!!  false   !!!!
 ```
 
+## Compare Objects:
+
+### 2.0 !!! WARNING !!!
+
+```js
+let product1 = {
+  name: "ball",
+  price: 200,
+};
+
+let product2 = product1;
+
+console.log(product1 === product2); // true
+
+product1.price = 300;
+
+console.log(product1 === product2); // !!!!   true   !!!!
+```
+
+
 
 
