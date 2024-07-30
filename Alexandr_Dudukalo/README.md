@@ -51,9 +51,6 @@ console.log(product1 === product2); // !!!!   true   !!!!
 ### 2.1 !!! WARNING !!!
 
 ```js
-## Objects with Function:
-
-```js
 const products = [
   {
     name: "ball",
