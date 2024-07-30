@@ -84,6 +84,8 @@ console.log(products);
 
 ### 3.0 !!! WARNING !!!
 
+#### MUTATION
+
 ```js
 const array1 = [1, 2, 3, 4, 5];
 const array2 = array1;
@@ -104,6 +106,30 @@ console.log(array1, array2); // [ 0, 2, 3, 4, 5, 6 ] [ 0, 2, 3, 4, 5, 6 ]
 console.log(array1 === array2); // true
 ```
 
+### 3.1 !!! WARNING !!!
+
+#### NO MUTATION
+```js
+const menu = ["Menu", "Home", "About", "Contact"];
+
+// !!! WARNING !!!
+console.log(menu);
+// [ 'Menu', 'Home', 'About', 'Contact' ]
+
+for (let item of menu) {
+  item += "!!!";        // !!! NO MUTATION !!!
+  console.log(item); 
+}
+
+// Menu!!!
+// Home!!!
+// About!!!
+// Contact!!!
+
+console.log(menu);
+// [ 'Menu', 'Home', 'About', 'Contact' ]
+// !!! WARNING !!!
+```
 
 
 
