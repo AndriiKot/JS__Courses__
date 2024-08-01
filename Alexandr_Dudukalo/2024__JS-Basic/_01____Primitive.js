@@ -1,5 +1,5 @@
 ﻿let price1 = 200;
-let price2 = price;
+let price2 = price1;
 
 //!!! WARNING !!!
 

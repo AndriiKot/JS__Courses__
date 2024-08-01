@@ -8,7 +8,9 @@ for (const item of menu) {
   document.body.append(btn);
 
   btn.onclick = () => {
-    if (activeBtn) activeBtn.classList.remove("active");
+    if (activeBtn) {
+      activeBtn.classList.remove("active");
+    }
     btn.classList.add("active");
     activeBtn = btn;
   };
