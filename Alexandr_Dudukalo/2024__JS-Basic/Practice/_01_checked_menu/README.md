@@ -1,6 +1,8 @@
 ﻿
 #### ! For the code to work correctly, use 'live server' in Visual Studio Code !
 
+![Checked Menu](https://github.com/AndriiKot/JS__Courses__/blob/master/Alexandr_Dudukalo/2024__JS-Basic/Practice/_01_checked_menu/images/__v1_0_0__.png)
+
 ```js
 const menu = ["Menu", "Home", "About", "Contact"];
 let activeBtn;
