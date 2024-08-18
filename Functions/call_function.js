@@ -21,7 +21,7 @@ sum_v2();     // return NaN
 //Variation 3
 
 const sum_v3 = (...args) => {
-  return args[0] = args[1];
+  return args[0] + args[1];
 };
 
 
