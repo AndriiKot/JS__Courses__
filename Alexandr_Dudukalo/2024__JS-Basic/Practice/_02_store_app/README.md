@@ -1,21 +1,70 @@
 ﻿
 #### ! For the code to work correctly, use 'live server' in Visual Studio Code !
 
-![Checked Menu](https://github.com/AndriiKot/JS__Courses__/blob/master/Alexandr_Dudukalo/2024__JS-Basic/Practice/_01_checked_menu/images/__v1_0_0__.png)
+![Store App](https://github.com/AndriiKot/JS__Courses__/blob/master/Alexandr_Dudukalo/2024__JS-Basic/Practice/_01_checked_menu/images/__v1_0_0__.png)
 
 ```js
-const menu = ["Menu", "Home", "About", "Contact"];
-let activeBtn;
+const products = [
+  {
+    name: "Vasa",
+    price: 300,
+  },
+  {
+    name: "Book",
+    price: 50,
+  },
+  {
+    name: "Coffee",
+    price: 30,
+  },
+];
 
-for (const item of menu) {
-  const btn = document.createElement("button");
-  btn.textContent = item;
-  document.body.append(btn);
+const listEl = document.createElement("ul");
 
-  btn.onclick = () => {
-    if (activeBtn) activeBtn.classList.remove("active");  // delete the old active button
-    btn.classList.add("active");
-    activeBtn = btn;
-  };
+const addBoxEl = document.createElement("div");
+
+const nameInput = document.createElement("input");
+nameInput.type = "text";
+nameInput.placeholder = "Product name";
+
+const priceInput = document.createElement("input");
+priceInput.type = "number";
+priceInput.placeholder = "Product price";
+
+const addBtn = document.createElement("button");
+addBtn.textContent = "Add";
+
+addBoxEl.append(nameInput, priceInput, addBtn);
+
+function getListItem(product) {
+  let itemEl = document.createElement("li");
+  itemEl.textContent = `${product.name}: ${product.price}$`;
+
+  return itemEl;
+}
+
+function renderList(arr) {
+  listEl.innerHTML = "";
+  for (const item of arr) {
+    let newItem = getListItem(item);
+    listEl.append(newItem);
+  }
+}
+
+function addProduct() {
+  const name = nameInput.value;
+  const price = priceInput.value;
+  products.push({ name, price });
+  renderList(products);
+  nameInput.value = "";
+  priceInput.value = "";
+}
+
+addBtn.addEventListener("click", addProduct);
+
+document.body.append(addBoxEl);
+document.body.append(listEl);
+
+renderList(products);
 }
 ```
