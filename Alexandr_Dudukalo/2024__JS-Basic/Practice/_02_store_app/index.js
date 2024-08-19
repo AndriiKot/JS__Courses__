@@ -44,7 +44,22 @@ function renderList(arr) {
   }
 }
 
+function addProduct() {
+  const name = nameInput.value;
+  const price = priceInput.value;
+  products.push({ name, price });
+  listEl.innerHTML = "";
+  renderList(products);
+  nameInput.value = "";
+  priceInput.value = "";
+}
+
+addBtn.addEventListener("click", addProduct);
+
 document.body.append(addBoxEl);
 document.body.append(listEl);
 
 renderList(products);
+
+
+
