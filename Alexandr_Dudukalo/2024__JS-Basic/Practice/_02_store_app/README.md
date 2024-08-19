@@ -53,7 +53,7 @@ function renderList(arr) {
 
 function addProduct() {
   const name = nameInput.value;
-  const price = priceInput.value;
+  const price = +priceInput.value;
   products.push({ name, price });
   renderList(products);
   nameInput.value = "";
