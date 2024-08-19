@@ -38,6 +38,7 @@ function getListItem(product) {
 }
 
 function renderList(arr) {
+  listEl.innerHTML = "";
   for (const item of arr) {
     let newItem = getListItem(item);
     listEl.append(newItem);
@@ -48,7 +49,6 @@ function addProduct() {
   const name = nameInput.value;
   const price = priceInput.value;
   products.push({ name, price });
-  listEl.innerHTML = "";
   renderList(products);
   nameInput.value = "";
   priceInput.value = "";
@@ -60,6 +60,3 @@ document.body.append(addBoxEl);
 document.body.append(listEl);
 
 renderList(products);
-
-
-
