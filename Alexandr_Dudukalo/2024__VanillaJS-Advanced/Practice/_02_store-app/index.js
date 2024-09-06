@@ -47,11 +47,12 @@ function renderList(arr) {
 
 function addProduct() {
   const name = nameInput.value;
-  const price = priceInput.value;
+  const price = +priceInput.value;
   products.push({ name, price });
   renderList(products);
   nameInput.value = "";
   priceInput.value = "";
+  console.log(products);
 }
 
 addBtn.addEventListener("click", addProduct);
@@ -60,3 +61,5 @@ document.body.append(addBoxEl);
 document.body.append(listEl);
 
 renderList(products);
+
+
