@@ -1,4 +1,4 @@
-﻿const input = document.createElement("input");
+const input = document.createElement("input");
 const p = document.createElement("p");
 
 document.body.append(input, p);
