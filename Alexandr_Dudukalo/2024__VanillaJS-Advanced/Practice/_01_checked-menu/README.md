@@ -2,7 +2,7 @@
 #### ! For the code to work correctly, use 'live server' in Visual Studio Code !
 
 ![Checked Menu](https://github.com/AndriiKot/JS__Courses__/blob/main/Alexandr_Dudukalo/2024__VanillaJS-Advanced/Practice/_01_checked-menu/images/__v1_0_0__.png)
-![Checked Menu](https://github.com/AndriiKot/JS__Courses__/blob/main/Alexandr_Dudukalo/2024__VanillaJS-Advanced/Practice/_01_checked-menu/images/__v1_0_0__.png)
+
 ```j
 const menu = ["Menu", "Home", "About", "Contact"];
 let activeBtn;
