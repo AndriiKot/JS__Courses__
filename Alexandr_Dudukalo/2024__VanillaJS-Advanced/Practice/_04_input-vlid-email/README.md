@@ -5,26 +5,17 @@
 
 ```js
 const input = document.createElement("input");
-const p = document.createElement("p");
+document.body.append(input);
 
-document.body.append(input, p);
+// Используем регулярное выражение для валидации email
+const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-function getNormalName(input) {
-  const trimmedName = input.trim();
-  return trimmedName
-    ? trimmedName.charAt(0).toUpperCase() + trimmedName.slice(1).toLowerCase()
-    : "";
-}
+const handleInput = (event) => {
+  const email = event.target.value;
+  input.classList.toggle("success", isValidEmail(email)); // Используем toggle для добавления/удаления класса
+};
 
-input.addEventListener("input", (event) => {
-  const inputElement = event.target;
-  const filteredValue = inputElement.value.replace(/[^a-zA-Zа-яА-ЯёЁ]/g, "");
-
-  inputElement.value = filteredValue; // Обновляем значение только в случае изменения
-
-  const normalName = getNormalName(filteredValue);
-  p.textContent = normalName;
-});
+input.addEventListener("input", handleInput);
 
 input.focus();
 ```
