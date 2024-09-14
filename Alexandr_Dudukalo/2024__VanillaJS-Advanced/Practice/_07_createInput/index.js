@@ -10,23 +10,22 @@ function getInput({
   return input;
 }
 
-const validateText = (event) => {
+const replaceHttp = (event) => {
   let { value } = event.target; // Получаем текущее значение инпута
   value = value.replaceAll("http", ""); // Заменяем 'http' на пустую строку
-  event.target.value = value; // Обновляем значение инпута
-  console.log(event.target.value); // Логируем обновленное значение
-
+  return (event.target.value = value); // Обновляем значение инпута
+};
+const validateText = (event, { fn = () => {} } = {}) => {
   event.target.setCustomValidity(
-    value.trim() === "" ? "Поле не может быть пустым." : "" // Если значение пустое, устанавливаем ошибку
+    fn(event).trim() === "" ? "Поле не может быть пустым." : "" // Если значение пустое, устанавливаем ошибку
   );
   event.target.reportValidity(); // Это поможет показать ошибку, если она есть
 };
 
-const validateName = (event) => {
-  const { value } = event.target;
+const validateName = (event, { fn = () => {} } = {}) => {
   const namePattern = /^[A-Za-zА-Яа-яЁё\s]+$/;
   event.target.setCustomValidity(
-    namePattern.test(value) ? "" : "Имя должно содержать только буквы."
+    namePattern.test(fn(event)) ? "" : "Имя должно содержать только буквы."
   );
   event.target.reportValidity(); // Это поможет показать ошибку, если она есть
 };
@@ -35,9 +34,15 @@ const validateName = (event) => {
 const form = document.createElement("form");
 
 // Создаем инпуты
-const inputElText = getInput({ fn: validateText });
+// const inputElText = getInput({ fn: validateText });
+const inputElText = getInput({
+  fn: (event) => validateText(event, { fn: replaceHttp }),
+});
 const inputElNumber = getInput({ type: "number", placeholder: "Enter number" });
-const inputElName = getInput({ placeholder: "Enter name", fn: validateName });
+const inputElName = getInput({
+  placeholder: "Enter name",
+  fn: (event) => validateName(event, { fn: replaceHttp }),
+});
 
 // Добавляем инпуты в форму
 form.append(inputElText, inputElNumber, inputElName);
