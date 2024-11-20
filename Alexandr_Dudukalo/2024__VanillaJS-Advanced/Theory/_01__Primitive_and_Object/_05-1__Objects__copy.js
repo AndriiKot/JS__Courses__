@@ -1,6 +1,8 @@
-﻿// Copy Objects
+﻿'use strict';
+
+// Copy Objects
 const product1 = {
-  name: "ball",
+  name: 'ball',
   price: 200,
 
   size: {

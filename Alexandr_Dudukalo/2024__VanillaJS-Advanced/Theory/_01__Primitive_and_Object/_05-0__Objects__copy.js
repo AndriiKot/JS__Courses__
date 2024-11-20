@@ -1,6 +1,8 @@
-﻿// Copy Objects
+﻿'use strict';
+
+// Copy Objects
 const product1 = {
-  name: "ball",
+  name: 'ball',
   price: 200,
 };
 
@@ -10,4 +12,3 @@ const product2 = {
 };
 
 console.log(product1 === product2); //  !!!  false   !!!
-

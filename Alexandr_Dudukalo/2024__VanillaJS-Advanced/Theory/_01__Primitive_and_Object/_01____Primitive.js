@@ -1,5 +1,7 @@
-﻿let price1 = 200;
-let price2 = price1;
+﻿'use strict';
+
+let price1 = 200;
+const price2 = price1;
 
 //!!! WARNING !!!
 
@@ -8,4 +10,3 @@ console.log(price1, price2);
 
 // 300
 // 200
-

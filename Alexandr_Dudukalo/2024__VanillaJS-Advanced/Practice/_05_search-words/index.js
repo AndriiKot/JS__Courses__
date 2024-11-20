@@ -1,13 +1,10 @@
-const input = document.querySelector(".search");
-const p = document.querySelectorAll("p");
+const input = document.querySelector('.search');
+const p = document.querySelectorAll('p');
 
 const searchWord = (word, elements = []) => {
   elements.forEach((element) => {
     if (element.textContent.includes(word)) {
-      element.innerHTML = element.textContent.replaceAll(
-        word,
-        "<span style='color: red'>" + word + "</span>"
-      );
+      element.innerHTML = element.textContent.replaceAll(word, "<span style='color: red'>" + word + '</span>');
     } else {
       // Восстанавливаем текст, если слово не найдено
       element.innerHTML = element.textContent;
@@ -15,6 +12,6 @@ const searchWord = (word, elements = []) => {
   });
 };
 
-input.addEventListener("input", (event) => {
+input.addEventListener('input', (event) => {
   searchWord(event.target.value, p);
 });

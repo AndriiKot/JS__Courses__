@@ -1,14 +1,16 @@
-﻿const products = [
+﻿'use strict';
+
+const products = [
   {
-    name: "ball",
+    name: 'ball',
     price: 200,
   },
   {
-    name: "pen",
+    name: 'pen',
     price: 10,
   },
   {
-    name: "book",
+    name: 'book',
     price: 300,
   },
 ];

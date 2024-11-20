@@ -1,7 +1,7 @@
-const hello = (name = "Andrii") => {
-  console.log(`Hello ${name}!`)
-}
+'use strict';
 
-hello()
+const hello = (name = 'Andrii') => {
+  console.log(`Hello ${name}!`);
+};
 
-
+hello();

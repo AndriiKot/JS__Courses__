@@ -1,6 +1,8 @@
-﻿// Object with Object
+﻿'use strict';
+
+// Object with Object
 const product = {
-  name: "ball",
+  name: 'ball',
   price: 200,
   size: {
     width: 200,

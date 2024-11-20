@@ -1,4 +1,6 @@
-const name = "aNDriI";
+'use strict';
+
+const name = 'aNDriI';
 
 console.log(name); // 'aNDriI'
 

@@ -1,6 +1,7 @@
-﻿const name = 'Andrii';
+﻿'use strict';
 
-console.log(name + ' ' + 'age: ' + 37) // Andrii age: 37
+const name = 'Andrii';
+
+console.log(name + ' ' + 'age: ' + 37); // Andrii age: 37
 
 // 'Andrii age: 37'
-

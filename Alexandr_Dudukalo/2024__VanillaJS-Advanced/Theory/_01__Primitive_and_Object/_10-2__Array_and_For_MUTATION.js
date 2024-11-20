@@ -1,4 +1,6 @@
-﻿const menu = ["Menu", "Home", "About", "Contact"];
+﻿'use strict';
+
+const menu = ['Menu', 'Home', 'About', 'Contact'];
 
 // !!! WARNING !!!
 console.log(menu);
@@ -10,7 +12,7 @@ console.log(menu);
 // }
 
 for (let i = 0; i < menu.length; i++) {
-  menu[i] += "!!!";                       // !!! MUTATION !!!
+  menu[i] += '!!!'; // !!! MUTATION !!!
   console.log(menu[i]);
 }
 

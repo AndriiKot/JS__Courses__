@@ -1,5 +1,7 @@
-﻿let product = {
-  name: "ball",
+﻿'use strict';
+
+const product = {
+  name: 'ball',
   price: 200,
 };
 

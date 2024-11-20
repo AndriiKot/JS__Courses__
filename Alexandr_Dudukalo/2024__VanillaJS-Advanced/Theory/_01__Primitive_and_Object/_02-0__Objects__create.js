@@ -1,8 +1,9 @@
-﻿let product = {};
+﻿'use strict';
 
-product.name = "ball";
+const product = {};
+
+product.name = 'ball';
 product.price = 200;
 
 console.table({ product });
 //  product: { name: "ball", price: 200 }
-

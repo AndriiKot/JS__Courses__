@@ -1,12 +1,14 @@
-﻿// Function Declaration statement
+﻿'use strict';
+
+// Function Declaration statement
 
 function hello(name) {
   name = name[0].toUpperCase() + name.slice(1); // !!! NO MUTATION !!!
   return `Hello ${name}!`;
 }
 
-const name1 = "john";
-const name2 = "andrii";
+const name1 = 'john';
+const name2 = 'andrii';
 
 console.log(name1, name2); // john andrii
 

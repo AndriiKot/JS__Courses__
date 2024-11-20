@@ -1,0 +1,25 @@
+{
+  "name": "vanillajs",
+  "version": "1.0.0",
+  "description": "Study and Practice 'VanillaJS'",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\""
+  },
+  "private": true,
+  "dependencies": {
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3"
+  }, 
+  "keywords": [
+    "VanillaJS",
+    "lessons",
+    "JavaScript"
+  ],
+  "author": "AndriiKot",
+  "license": "ISC"
+}

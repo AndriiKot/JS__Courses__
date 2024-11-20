@@ -1,4 +1,6 @@
-﻿// Object with Object
+﻿'use strict';
+
+// Object with Object
 const size = {
   width: 200,
   height: 300,
@@ -6,9 +8,9 @@ const size = {
 };
 
 const product = {
-  name: "ball",
+  name: 'ball',
   price: 200,
-  size: size,
+  size,
 };
 
 console.dir(product);

@@ -1,13 +1,15 @@
-﻿const menu = ["Menu", "Home", "About", "Contact"];
+﻿'use strict';
+
+const menu = ['Menu', 'Home', 'About', 'Contact'];
 
 // !!! WARNING !!!
 for (const item of menu) {
-  const btn = document.createElement("button");
+  const btn = document.createElement('button');
   btn.textContent = item;
   console.log(btn);
   document.body.append(btn);
 
-  btn.textContent = item + "!!!";
+  btn.textContent = item + '!!!';
   console.log(btn);
 }
 // <button>Menu!!!</button>

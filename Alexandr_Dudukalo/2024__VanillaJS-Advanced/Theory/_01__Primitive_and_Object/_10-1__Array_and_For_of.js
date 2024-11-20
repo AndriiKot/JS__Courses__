@@ -1,11 +1,13 @@
-﻿const menu = ["Menu", "Home", "About", "Contact"];
+﻿'use strict';
+
+const menu = ['Menu', 'Home', 'About', 'Contact'];
 
 // !!! WARNING !!!
 console.log(menu);
 // [ 'Menu', 'Home', 'About', 'Contact' ]
 
 for (let item of menu) {
-  item = item + "!!!";
+  item += '!!!';
   console.log(item); //
 }
 

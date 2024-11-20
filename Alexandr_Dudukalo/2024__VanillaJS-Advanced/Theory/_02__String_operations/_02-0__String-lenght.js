@@ -1,4 +1,5 @@
-﻿const str = 'Andrii';
+﻿'use strict';
+
+const str = 'Andrii';
 
 console.log(str.length); // 6
-

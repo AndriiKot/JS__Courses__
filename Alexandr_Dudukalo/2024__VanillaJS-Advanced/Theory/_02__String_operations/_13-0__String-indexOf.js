@@ -1,7 +1,9 @@
-const stringJs = "Web Developer (JS)";
+'use strict';
 
-console.log(stringJs.indexOf("Developer"));
-console.log(stringJs.indexOf("JS"));
+const stringJs = 'Web Developer (JS)';
+
+console.log(stringJs.indexOf('Developer'));
+console.log(stringJs.indexOf('JS'));
 
 // 4
 // 15
